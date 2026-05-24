@@ -55,3 +55,24 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Additional ignored file types
+*.manifest
+*.json
+*.suo
+*.vsidx
+*.db
+*.db-wal
+*.db-shm
+*.testlog
+*.config
+*.user
+
+# Exceptions - keep essential project files
+!appsettings*.json
+!launchSettings.json
+!package.json
+!package-lock.json
+
+# Visual Studio local files
+.vs/
