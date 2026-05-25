@@ -13,6 +13,9 @@ namespace TechnicalTest.Services.Services
         private static List<ProductDto> _products = new List<ProductDto>();
         public List<ProductDto> getProductsByColour(string colour)
         {
+            if(colour.Equals("undefined"))
+                return _products;
+
             return _products.Where(p => p.Colour.Equals(colour, StringComparison.OrdinalIgnoreCase)).ToList();
         }
 
